@@ -1,5 +1,5 @@
 # Diploma-Work
-
+<pre>
 Using make will create the shell executable.
 
 Simply run it with  ./shell
@@ -35,6 +35,6 @@ Simply run it with  ./shell
   ◦ env with no options or arguments
   ◦ exit with no options
   
-  
+  </pre>
   
   
