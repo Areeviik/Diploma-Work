@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 /**
  * Unsets the variable from the environment if the variable is present. Outputs errro

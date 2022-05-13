@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 int	rows_amount(char **spl)
 {

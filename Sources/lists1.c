@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 int	count_list_elements(void)
 {

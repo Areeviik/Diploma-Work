@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 char	*dollar_sign(char *s, int *i)
 {

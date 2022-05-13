@@ -1,4 +1,8 @@
-#include "../minishell.h"
+#include "../shell.h"
+
+/*
+* Create new list.
+*/
 
 t_list	*ft_lstnew(char *var_inf, char *val_inf, int is_exp)
 {
@@ -29,6 +33,9 @@ t_list	*find_element(char *var_name)
 	return (NULL);
 }
 
+/*
+* Add new element at beginning of list.
+*/
 void	ft_lstadd_front(t_list **lst, t_list *neww)
 {
 	if (*lst)
@@ -40,6 +47,10 @@ void	ft_lstadd_front(t_list **lst, t_list *neww)
 	else
 		*lst = neww;
 }
+
+/*
+* Delete element from list.
+*/
 
 void	ft_lstdel(t_list **lst, t_list *del)
 {

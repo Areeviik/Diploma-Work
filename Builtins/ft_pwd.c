@@ -1,8 +1,6 @@
-#include "../minishell.h"
+#include "../shell.h"
 
-/**
- * The function mimics the behavior of pwd command in bash.
- **/
+/* The function mimics the behavior of pwd command in bash.*/
 
 void	ft_pwd(int num)
 {

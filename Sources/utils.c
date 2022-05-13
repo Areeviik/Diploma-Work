@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 int	is_space(char *str)
 {

@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 int	plz_get_index(char **env)
 {

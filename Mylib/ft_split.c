@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: akhachat <akhachat@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/06 18:09:31 by akhachat          #+#    #+#             */
-/*   Updated: 2022/04/18 20:44:45 by akhachat         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "../minishell.h"
+#include "../shell.h"
 
 static int	char_count(char const *str, char c, int i, int count)
 {	
@@ -63,6 +51,8 @@ int	current_len(const char *s, int *k, char c)
 	}
 	return (j);
 }
+
+/* Split string, with specified character as delimiter, into an array of strings. */
 
 char	**ft_split(char const *s, char c)
 {

@@ -1,9 +1,16 @@
-#include "minishell.h"
+#include "shell.h"
 
-// void	welcome_text(void)
-// {
-	
-// }
+void	welcome_text(void)
+{
+	int	len;
+
+	len = ft_strlen("░▒▓██████████►╬◄██████████▓▒░\n");
+	write(1, "░▒▓██████████►╬◄██████████▓▒░\n", len);
+	write(1, "░▒▓██►╔╦╦╦═╦╗╔═╦═╦══╦═╗◄██▓▒░\n", len);
+	write(1, "░▒▓██►║║║║╩╣╚╣═╣║║║║║╩╣◄██▓▒░\n", len);
+	write(1, "░▒▓██►╚══╩═╩═╩═╩═╩╩╩╩═╝◄██▓▒░\n", len);
+	write(1, "░▒▓██████████►╬◄██████████▓▒░\n", len);
+}
 
 void	mini_checkings(char *str)
 {
@@ -23,6 +30,7 @@ int	main(int argc, char **argv, char **env)
 	if (argc != 1)
 		puterror("Wrong number of arguments\n");
 	fill_env(env, argc, argv);
+	welcome_text();
 	sig_init();
 	while (1)
 	{

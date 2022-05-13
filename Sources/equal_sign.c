@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 void	equal_handling_third(char **s)
 {

@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 int	check_builtin(char *s)
 {

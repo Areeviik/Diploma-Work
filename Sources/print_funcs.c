@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 void	print_error(char *s)
 {
@@ -19,6 +19,8 @@ void	ft_error(char *str, int code)
 	// free_all();
 	exit (code);
 }
+
+/* The function outputs the environment. */
 
 void	print_list(void)
 {

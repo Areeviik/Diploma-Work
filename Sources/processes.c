@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 void	connect_pipes(int i)
 {
@@ -35,7 +35,7 @@ void	child_process(int num)
 {
 	char	**env;
 
-	if (!(ft_strncmp_quote(g_g.cmds[num].args[0], "./minishell")))
+	if (!(ft_strncmp_quote(g_g.cmds[num].args[0], "./shell")))
 		update_lvl(1);
 	env = list_to_arr();
 	if (g_g.pipam != 1 || !check_builtin(g_g.cmds[num].name))

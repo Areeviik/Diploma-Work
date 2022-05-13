@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 char	*without_quotes(char *str)
 {

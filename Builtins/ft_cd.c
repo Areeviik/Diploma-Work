@@ -1,6 +1,4 @@
-#include "../minishell.h"
-
-
+#include "../shell.h"
 
 void	cd_minus(char *str)
 {
@@ -50,6 +48,11 @@ void	ft_cd1(char *p, char *str, char *res, t_list *tmp)
 		cd_done(tmp, str, old);
 	free(str);
 }
+
+/**
+* The function changes the directory and updates the OLDPWD and PWD fields
+* of the environment properly.
+**/
 
 void	ft_cd(char *p)
 {	

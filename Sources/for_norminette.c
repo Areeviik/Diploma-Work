@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 void	quote_checker_norme(char *s, int *i)
 {

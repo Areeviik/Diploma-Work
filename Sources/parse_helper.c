@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 void	check_redirects(char *s, int i, int num)
 {
@@ -72,7 +72,7 @@ void	treat_redir(int num, int *cmd_fd, int flag)
 
 	fd = open(g_g.cmds[num].file, flag, 0644);
 	if (fd == -1)
-		print_error("minishell: Failed to open a file\n");
+		print_error("shell: Failed to open a file\n");
 	else
 	{
 		if (*cmd_fd != 0 && *cmd_fd != 1)

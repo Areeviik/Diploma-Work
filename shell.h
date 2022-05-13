@@ -1,5 +1,5 @@
-#ifndef MINISHELL_H
-# define MINISHELL_H
+#ifndef SHELL_H
+# define SHELL_H
 
 # include <stdio.h>
 # include <unistd.h>
@@ -11,6 +11,7 @@
 # include <sys/wait.h>
 # include <signal.h>
 
+/* For storing information about every command */
 typedef struct s_cmds
 {
 	char	*name;
@@ -24,6 +25,7 @@ typedef struct s_cmds
 	char	*str_arg;
 }		t_cmds;
 
+/* For storing the environment variables line by line as a node */
 typedef struct s_list
 {
 	char			*var;
@@ -76,6 +78,7 @@ int		ft_strncmp_quote(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split_for_export(char const *s);
+char	**ft_split_for_dot(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
 
 /*Builtin functions */
@@ -166,6 +169,5 @@ void	free_darray(char **str);
 void	welcome_text(void);
 void	puterror(char *str);
 void	start(char *str);
-char	**ft_split_for_dot(char const *s, char c);
 
 #endif

@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: akhachat <akhachat@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/04 18:55:33 by akhachat          #+#    #+#             */
-/*   Updated: 2022/04/04 16:43:16 by akhachat         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "../minishell.h"
+#include "../shell.h"
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -53,6 +41,8 @@ size_t	ft_strlcpy(char *dst, const char *src,
 	}
 	return (src - t - 1);
 }
+
+/* Trim beginning and end of string with the specified characters. */
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 /**
  * The function checks for the option n. It also checks for valid option n.

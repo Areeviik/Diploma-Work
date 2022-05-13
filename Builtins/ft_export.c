@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 void	ft_export_sec(void)
 {
@@ -38,6 +38,8 @@ void	ft_export_third(void)
 		free(g_g.e->s[1]);
 	}
 }
+
+/* The function exprts the variable to the environment. */
 
 void	ft_export(char **args)
 {

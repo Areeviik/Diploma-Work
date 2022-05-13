@@ -1,4 +1,4 @@
-#include "../minishell.h"
+#include "../shell.h"
 
 void	ft_atoi_exit_1(char *str)
 {
@@ -90,7 +90,5 @@ void	ft_exit(int code)
 		code %= 256;
 	ft_putstr_fd("exit\n", 2);
 	update_lvl(0);
-	// free_env();
-	// free_all();
 	exit(code);
 }
